@@ -7,16 +7,32 @@
 //
 
 #import "AppDelegate.h"
+#import "MagicPacketSender.h"
+#import "MACAddressManager.h"
+
+#define WATCHKIT_QUEUE "com.drewfitzpatrick.magician.watchkitqueue"
 
 @interface AppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation AppDelegate {
+    UIBackgroundTaskIdentifier watchkitBackgroundID;
+}
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        watchkitBackgroundID = 0;
+    }
+    return self;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[MACAddressManager sharedManager] loadFromArchive];
+    
     return YES;
 }
 
@@ -28,6 +44,7 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [[MACAddressManager sharedManager] saveToArchive];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
@@ -40,6 +57,20 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(void)application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *)userInfo reply:(void (^)(NSDictionary *))reply {
+    watchkitBackgroundID = [application beginBackgroundTaskWithName:@"Watchkit Extension Request Task" expirationHandler:^{
+        reply(@{@"success": @NO});
+        [application endBackgroundTask:watchkitBackgroundID];
+    }];
+    
+    BOOL success = YES;
+//    BOOL success = [MagicPacketSender sendAll];
+//    sleep(3);
+    reply(@{@"success" : [NSNumber numberWithBool:success]});
+    
+    [application endBackgroundTask:watchkitBackgroundID];
 }
 
 @end

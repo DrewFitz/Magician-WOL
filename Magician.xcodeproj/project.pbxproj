@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0A5FB61B1371440019FAEF /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0A5FB51B1371440019FAEF /* InterfaceController.m */; };
+		3A0A5FB91B1371440019FAEF /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0A5FB81B1371440019FAEF /* NotificationController.m */; };
+		3A0A5FBC1B1371440019FAEF /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0A5FBB1B1371440019FAEF /* GlanceController.m */; };
+		3A0A5FBE1B1371440019FAEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A0A5FBD1B1371440019FAEF /* Images.xcassets */; };
+		3A0A5FC21B1371440019FAEF /* Magician WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 3A0A5FC11B1371440019FAEF /* Magician WatchKit App.app */; };
+		3A0A5FCA1B1371440019FAEF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0A5FC81B1371440019FAEF /* Interface.storyboard */; };
+		3A0A5FCC1B1371440019FAEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A0A5FCB1B1371440019FAEF /* Images.xcassets */; };
+		3A0A5FCF1B1371440019FAEF /* Magician WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3A0A5FAF1B1371440019FAEF /* Magician WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3A0A5FD91B13E1810019FAEF /* MagicPacketSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0A5FD81B13E1810019FAEF /* MagicPacketSender.m */; };
 		3A1515AA1A79401300D5E3DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1515A91A79401300D5E3DE /* main.m */; };
 		3A1515AD1A79401300D5E3DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1515AC1A79401300D5E3DE /* AppDelegate.m */; };
 		3A1515B01A79401300D5E3DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1515AF1A79401300D5E3DE /* ViewController.m */; };
@@ -14,9 +23,28 @@
 		3A1515B51A79401300D5E3DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A1515B41A79401300D5E3DE /* Images.xcassets */; };
 		3A1515B81A79401300D5E3DE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A1515B61A79401300D5E3DE /* LaunchScreen.xib */; };
 		3A1515C41A79401300D5E3DE /* MagicianTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1515C31A79401300D5E3DE /* MagicianTests.m */; };
+		3ABA7BBE1B158D780022F58B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA7BBD1B158D780022F58B /* Reachability.m */; };
+		3ABA7BC21B15957F0022F58B /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA7BC11B15957F0022F58B /* AsyncUdpSocket.m */; };
+		3ADBEAA51B17628F00BD1616 /* MACAddressTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADBEAA41B17628F00BD1616 /* MACAddressTableViewController.m */; };
+		3ADBEAAB1B17638500BD1616 /* MACAddressManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADBEAAA1B17638500BD1616 /* MACAddressManager.m */; };
+		3ADBEAAF1B176CB600BD1616 /* MACAddressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADBEAAE1B176CB600BD1616 /* MACAddressTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3A0A5FC31B1371440019FAEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A15159C1A79401200D5E3DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A0A5FC01B1371440019FAEF;
+			remoteInfo = "Magician WatchKit App";
+		};
+		3A0A5FCD1B1371440019FAEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A15159C1A79401200D5E3DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A0A5FAE1B1371440019FAEF;
+			remoteInfo = "Magician WatchKit Extension";
+		};
 		3A1515BE1A79401300D5E3DE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3A15159C1A79401200D5E3DE /* Project object */;
@@ -26,7 +54,37 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3A0A5FD61B1371440019FAEF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3A0A5FCF1B1371440019FAEF /* Magician WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3A0A5FAF1B1371440019FAEF /* Magician WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Magician WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A0A5FB21B1371440019FAEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A0A5FB31B1371440019FAEF /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		3A0A5FB41B1371440019FAEF /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		3A0A5FB51B1371440019FAEF /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		3A0A5FB71B1371440019FAEF /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		3A0A5FB81B1371440019FAEF /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		3A0A5FBA1B1371440019FAEF /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		3A0A5FBB1B1371440019FAEF /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		3A0A5FBD1B1371440019FAEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3A0A5FC11B1371440019FAEF /* Magician WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Magician WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A0A5FC71B1371440019FAEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A0A5FC91B1371440019FAEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3A0A5FCB1B1371440019FAEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3A0A5FD71B13E1810019FAEF /* MagicPacketSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicPacketSender.h; sourceTree = "<group>"; };
+		3A0A5FD81B13E1810019FAEF /* MagicPacketSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicPacketSender.m; sourceTree = "<group>"; };
 		3A1515A41A79401200D5E3DE /* Magician.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magician.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A1515A81A79401300D5E3DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A1515A91A79401300D5E3DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,9 +98,26 @@
 		3A1515BD1A79401300D5E3DE /* MagicianTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicianTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A1515C21A79401300D5E3DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A1515C31A79401300D5E3DE /* MagicianTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicianTests.m; sourceTree = "<group>"; };
+		3ABA7BBC1B158D780022F58B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3ABA7BBD1B158D780022F58B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		3ABA7BC01B15957F0022F58B /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		3ABA7BC11B15957F0022F58B /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+		3ADBEAA31B17628F00BD1616 /* MACAddressTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACAddressTableViewController.h; sourceTree = "<group>"; };
+		3ADBEAA41B17628F00BD1616 /* MACAddressTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACAddressTableViewController.m; sourceTree = "<group>"; };
+		3ADBEAA91B17638500BD1616 /* MACAddressManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACAddressManager.h; sourceTree = "<group>"; };
+		3ADBEAAA1B17638500BD1616 /* MACAddressManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACAddressManager.m; sourceTree = "<group>"; };
+		3ADBEAAD1B176CB600BD1616 /* MACAddressTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACAddressTableViewCell.h; sourceTree = "<group>"; };
+		3ADBEAAE1B176CB600BD1616 /* MACAddressTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACAddressTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3A0A5FAC1B1371440019FAEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3A1515A11A79401200D5E3DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,11 +135,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A0A5FB01B1371440019FAEF /* Magician WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3A0A5FB41B1371440019FAEF /* InterfaceController.h */,
+				3A0A5FB51B1371440019FAEF /* InterfaceController.m */,
+				3A0A5FB71B1371440019FAEF /* NotificationController.h */,
+				3A0A5FB81B1371440019FAEF /* NotificationController.m */,
+				3A0A5FBA1B1371440019FAEF /* GlanceController.h */,
+				3A0A5FBB1B1371440019FAEF /* GlanceController.m */,
+				3A0A5FBD1B1371440019FAEF /* Images.xcassets */,
+				3A0A5FB11B1371440019FAEF /* Supporting Files */,
+			);
+			path = "Magician WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		3A0A5FB11B1371440019FAEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A0A5FB21B1371440019FAEF /* Info.plist */,
+				3A0A5FB31B1371440019FAEF /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A0A5FC51B1371440019FAEF /* Magician WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3A0A5FC81B1371440019FAEF /* Interface.storyboard */,
+				3A0A5FCB1B1371440019FAEF /* Images.xcassets */,
+				3A0A5FC61B1371440019FAEF /* Supporting Files */,
+			);
+			path = "Magician WatchKit App";
+			sourceTree = "<group>";
+		};
+		3A0A5FC61B1371440019FAEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A0A5FC71B1371440019FAEF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		3A15159B1A79401200D5E3DE = {
 			isa = PBXGroup;
 			children = (
 				3A1515A61A79401200D5E3DE /* Magician */,
 				3A1515C01A79401300D5E3DE /* MagicianTests */,
+				3A0A5FB01B1371440019FAEF /* Magician WatchKit Extension */,
+				3A0A5FC51B1371440019FAEF /* Magician WatchKit App */,
 				3A1515A51A79401200D5E3DE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +193,8 @@
 			children = (
 				3A1515A41A79401200D5E3DE /* Magician.app */,
 				3A1515BD1A79401300D5E3DE /* MagicianTests.xctest */,
+				3A0A5FAF1B1371440019FAEF /* Magician WatchKit Extension.appex */,
+				3A0A5FC11B1371440019FAEF /* Magician WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,11 +204,11 @@
 			children = (
 				3A1515AB1A79401300D5E3DE /* AppDelegate.h */,
 				3A1515AC1A79401300D5E3DE /* AppDelegate.m */,
-				3A1515AE1A79401300D5E3DE /* ViewController.h */,
-				3A1515AF1A79401300D5E3DE /* ViewController.m */,
-				3A1515B11A79401300D5E3DE /* Main.storyboard */,
-				3A1515B41A79401300D5E3DE /* Images.xcassets */,
-				3A1515B61A79401300D5E3DE /* LaunchScreen.xib */,
+				3ADBEAAC1B176CA000BD1616 /* Views */,
+				3ADBEAA61B17630C00BD1616 /* Controllers */,
+				3ADBEAA81B17634500BD1616 /* Models */,
+				3ADBEAA71B17632900BD1616 /* Resources */,
+				3ABA7BBF1B158D840022F58B /* External Classes */,
 				3A1515A71A79401200D5E3DE /* Supporting Files */,
 			);
 			path = Magician;
@@ -119,9 +240,94 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3ABA7BBF1B158D840022F58B /* External Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3ABA7BC01B15957F0022F58B /* AsyncUdpSocket.h */,
+				3ABA7BC11B15957F0022F58B /* AsyncUdpSocket.m */,
+				3ABA7BBC1B158D780022F58B /* Reachability.h */,
+				3ABA7BBD1B158D780022F58B /* Reachability.m */,
+			);
+			name = "External Classes";
+			sourceTree = "<group>";
+		};
+		3ADBEAA61B17630C00BD1616 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A1515AE1A79401300D5E3DE /* ViewController.h */,
+				3A1515AF1A79401300D5E3DE /* ViewController.m */,
+				3ADBEAA31B17628F00BD1616 /* MACAddressTableViewController.h */,
+				3ADBEAA41B17628F00BD1616 /* MACAddressTableViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3ADBEAA71B17632900BD1616 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3A1515B11A79401300D5E3DE /* Main.storyboard */,
+				3A1515B41A79401300D5E3DE /* Images.xcassets */,
+				3A1515B61A79401300D5E3DE /* LaunchScreen.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3ADBEAA81B17634500BD1616 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3A0A5FD71B13E1810019FAEF /* MagicPacketSender.h */,
+				3A0A5FD81B13E1810019FAEF /* MagicPacketSender.m */,
+				3ADBEAA91B17638500BD1616 /* MACAddressManager.h */,
+				3ADBEAAA1B17638500BD1616 /* MACAddressManager.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3ADBEAAC1B176CA000BD1616 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3ADBEAAD1B176CB600BD1616 /* MACAddressTableViewCell.h */,
+				3ADBEAAE1B176CB600BD1616 /* MACAddressTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3A0A5FAE1B1371440019FAEF /* Magician WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A0A5FD51B1371440019FAEF /* Build configuration list for PBXNativeTarget "Magician WatchKit Extension" */;
+			buildPhases = (
+				3A0A5FAB1B1371440019FAEF /* Sources */,
+				3A0A5FAC1B1371440019FAEF /* Frameworks */,
+				3A0A5FAD1B1371440019FAEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A0A5FC41B1371440019FAEF /* PBXTargetDependency */,
+			);
+			name = "Magician WatchKit Extension";
+			productName = "Magician WatchKit Extension";
+			productReference = 3A0A5FAF1B1371440019FAEF /* Magician WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		3A0A5FC01B1371440019FAEF /* Magician WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A0A5FD41B1371440019FAEF /* Build configuration list for PBXNativeTarget "Magician WatchKit App" */;
+			buildPhases = (
+				3A0A5FBF1B1371440019FAEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Magician WatchKit App";
+			productName = "Magician WatchKit App";
+			productReference = 3A0A5FC11B1371440019FAEF /* Magician WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 		3A1515A31A79401200D5E3DE /* Magician */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A1515C71A79401300D5E3DE /* Build configuration list for PBXNativeTarget "Magician" */;
@@ -129,10 +335,12 @@
 				3A1515A01A79401200D5E3DE /* Sources */,
 				3A1515A11A79401200D5E3DE /* Frameworks */,
 				3A1515A21A79401200D5E3DE /* Resources */,
+				3A0A5FD61B1371440019FAEF /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3A0A5FCE1B1371440019FAEF /* PBXTargetDependency */,
 			);
 			name = Magician;
 			productName = Magician;
@@ -166,6 +374,12 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Drew Fitzpatrick";
 				TargetAttributes = {
+					3A0A5FAE1B1371440019FAEF = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					3A0A5FC01B1371440019FAEF = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
 					3A1515A31A79401200D5E3DE = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -190,11 +404,31 @@
 			targets = (
 				3A1515A31A79401200D5E3DE /* Magician */,
 				3A1515BC1A79401300D5E3DE /* MagicianTests */,
+				3A0A5FAE1B1371440019FAEF /* Magician WatchKit Extension */,
+				3A0A5FC01B1371440019FAEF /* Magician WatchKit App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3A0A5FAD1B1371440019FAEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A0A5FBE1B1371440019FAEF /* Images.xcassets in Resources */,
+				3A0A5FC21B1371440019FAEF /* Magician WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A0A5FBF1B1371440019FAEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A0A5FCA1B1371440019FAEF /* Interface.storyboard in Resources */,
+				3A0A5FCC1B1371440019FAEF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3A1515A21A79401200D5E3DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,13 +449,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3A0A5FAB1B1371440019FAEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A0A5FB91B1371440019FAEF /* NotificationController.m in Sources */,
+				3A0A5FB61B1371440019FAEF /* InterfaceController.m in Sources */,
+				3A0A5FBC1B1371440019FAEF /* GlanceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3A1515A01A79401200D5E3DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ADBEAAB1B17638500BD1616 /* MACAddressManager.m in Sources */,
+				3A0A5FD91B13E1810019FAEF /* MagicPacketSender.m in Sources */,
 				3A1515B01A79401300D5E3DE /* ViewController.m in Sources */,
 				3A1515AD1A79401300D5E3DE /* AppDelegate.m in Sources */,
+				3ABA7BC21B15957F0022F58B /* AsyncUdpSocket.m in Sources */,
+				3ADBEAA51B17628F00BD1616 /* MACAddressTableViewController.m in Sources */,
 				3A1515AA1A79401300D5E3DE /* main.m in Sources */,
+				3ADBEAAF1B176CB600BD1616 /* MACAddressTableViewCell.m in Sources */,
+				3ABA7BBE1B158D780022F58B /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +486,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3A0A5FC41B1371440019FAEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A0A5FC01B1371440019FAEF /* Magician WatchKit App */;
+			targetProxy = 3A0A5FC31B1371440019FAEF /* PBXContainerItemProxy */;
+		};
+		3A0A5FCE1B1371440019FAEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A0A5FAE1B1371440019FAEF /* Magician WatchKit Extension */;
+			targetProxy = 3A0A5FCD1B1371440019FAEF /* PBXContainerItemProxy */;
+		};
 		3A1515BF1A79401300D5E3DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3A1515A31A79401200D5E3DE /* Magician */;
@@ -244,6 +504,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		3A0A5FC81B1371440019FAEF /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A0A5FC91B1371440019FAEF /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		3A1515B11A79401300D5E3DE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -263,6 +531,74 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3A0A5FD01B1371440019FAEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Magician WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3A0A5FD11B1371440019FAEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Magician WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3A0A5FD21B1371440019FAEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Magician_WatchKit_Extension;
+				INFOPLIST_FILE = "Magician WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		3A0A5FD31B1371440019FAEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = Magician_WatchKit_Extension;
+				INFOPLIST_FILE = "Magician WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 		3A1515C51A79401300D5E3DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -297,7 +633,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -332,7 +668,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -344,6 +680,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Magician/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +691,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Magician/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -396,6 +734,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3A0A5FD41B1371440019FAEF /* Build configuration list for PBXNativeTarget "Magician WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A0A5FD21B1371440019FAEF /* Debug */,
+				3A0A5FD31B1371440019FAEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A0A5FD51B1371440019FAEF /* Build configuration list for PBXNativeTarget "Magician WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A0A5FD01B1371440019FAEF /* Debug */,
+				3A0A5FD11B1371440019FAEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3A15159F1A79401200D5E3DE /* Build configuration list for PBXProject "Magician" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -412,6 +768,7 @@
 				3A1515C91A79401300D5E3DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A1515CA1A79401300D5E3DE /* Build configuration list for PBXNativeTarget "MagicianTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +777,7 @@
 				3A1515CC1A79401300D5E3DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "MagicPacketSender.h"
+
 
 @interface ViewController ()
 
@@ -24,4 +26,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)sendPacket:(id)sender{
+    [MagicPacketSender sendAll];
+}
+
 @end
+
