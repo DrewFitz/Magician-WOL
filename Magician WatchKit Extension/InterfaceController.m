@@ -8,7 +8,6 @@
 
 #import "InterfaceController.h"
 
-
 @interface InterfaceController()
 
 @property (weak, nonatomic) IBOutlet WKInterfaceImage *buttonInterfaceImage;
@@ -24,7 +23,7 @@
 
 -(void) startAnimating {
     [self.buttonInterfaceImage setImageNamed:@"LightningCircleAnim"];
-    [self.buttonInterfaceImage startAnimatingWithImagesInRange:NSMakeRange(0, 60) duration:1.0 repeatCount:0];
+    [self.buttonInterfaceImage startAnimatingWithImagesInRange:NSMakeRange(0, 60) duration:-1.0 repeatCount:0];
 }
 
 -(void) stopAnimating {
@@ -38,7 +37,7 @@
 }
 
 -(void)requestBootFromApp {
-    [InterfaceController openParentApplication:@{} reply:^(NSDictionary *replyInfo, NSError *error) {
+    [InterfaceController openParentApplication:@{@"requestType": @"bootAll"} reply:^(NSDictionary *replyInfo, NSError *error) {
         NSLog(@"replyInfo: %@", replyInfo);
         NSLog(@"error: %@", error);
         
@@ -78,6 +77,31 @@
 -(void)handleUserActivity:(NSDictionary *)userInfo {
     NSLog(@"Handle User Activity");
     [self bootAll];
+}
+
+-(void)scheduleSnoozeNotification {
+    [InterfaceController openParentApplication:@{@"requestType": @"snooze"} reply:^(NSDictionary *replyInfo, NSError *error) {
+        NSLog(@"replyInfo: %@", replyInfo);
+        NSLog(@"error: %@", error);
+    }];
+}
+
+-(void)handleActionWithIdentifier:(NSString *)identifier forLocalNotification:(UILocalNotification *)localNotification {
+    if ([identifier isEqualToString:@"bootAction"]) {
+        NSLog(@"Handle boot action");
+        [self bootAll];
+    } else if ([identifier isEqualToString:@"snoozeAction"]) {
+        [self scheduleSnoozeNotification];
+    }
+}
+
+-(void)handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)remoteNotification {
+    if ([identifier isEqualToString:@"bootAction"]) {
+        NSLog(@"Handle boot action");
+        [self bootAll];
+    } else if ([identifier isEqualToString:@"snoozeAction"]) {
+        [self scheduleSnoozeNotification];
+    }
 }
 
 @end

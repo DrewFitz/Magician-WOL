@@ -1,16 +1,19 @@
 {
     "aps": {
         "alert": {
-            "body": "Test message",
-            "title": "Optional title"
+            "body": "Entered \"Work\" network."
         },
-        "category": "myCategory"
+        "category": "enteredNetwork"
     },
     
     "WatchKit Simulator Actions": [
         {
-            "title": "First Button",
-            "identifier": "firstButtonAction"
+            "title": "Boot All",
+            "identifier": "bootAction"
+        },
+        {
+            "title": "Snooze",
+            "identifier": "snoozeAction"
         }
     ],
     

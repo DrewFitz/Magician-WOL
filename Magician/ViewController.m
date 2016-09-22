@@ -27,6 +27,15 @@
 }
 
 - (IBAction)sendPacket:(id)sender{
+    UILocalNotification* notification = [[UILocalNotification alloc] init];
+    notification.alertTitle = @"Title";
+    notification.alertBody = @"Body";
+    NSTimeInterval interval = 6; // test: 6 seconds
+    notification.fireDate = [NSDate dateWithTimeIntervalSinceNow:interval];
+    notification.timeZone = [NSTimeZone defaultTimeZone];
+    notification.category = @"BootNetwork";
+    [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+//    reply(@{@"success": @YES});
     [MagicPacketSender sendAll];
 }
 
